@@ -1,0 +1,14 @@
+CREATE SCHEMA users_details;
+
+USE SCHEMA users_details 
+  CREATE TABLE user(
+    name VARCHAR(50) NOT NULL,
+    age INT NOT NULL,
+  );
+
+INSERT INTO user (name, age)
+  VALUES
+    ('Khageswar Maharana', 21),
+    ('Hrushikesh Maharana', 50);
+
+SELECT * FROM user;
